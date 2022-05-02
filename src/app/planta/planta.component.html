@@ -1,33 +1,29 @@
 <div class="container-fluid">
   <div class="col-6">
-    <table class="table">
-      <thead>
+    <table class="table" width="1000">
+      <thead _ngcontent-iuq-c16 class="table-dark">
         <tr>
-          <th class="h4">#</th>
-          <th class="h4">Nombre común</th>
-          <th class="h4">Tipo</th>
-          <th class="h4">Clima</th>
+          <th class="h6">#</th>
+          <th class="h6">Nombre común</th>
+          <th class="h6">Tipo</th>
+          <th class="h6">Clima</th>
         </tr>
       </thead>
       <tbody>
+        <tr *ngFor="let planta of plantas">
+          <td >
+            <dd class="h6">{{planta.id}}</dd>
+          </td>
+          <td>
+            <dd class="h6">{{planta.nombre_comun}}</dd>
+          </td>
+          <td>
+            <dd class="h6">{{planta.tipo}}</dd>
+          </td>
+          <td>
+            <dd class="h6">{{planta.clima}}</dd>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
-</div>
-
-<div class="container-fluid">
-  <div class="col-6">
-    <table class="table">
-      <tr *ngFor="let planta of plantas">
-        <td>
-          <dd><img src="{{ artwork.images[0].source }}" alt="{{ artwork.name }}" (click)="onSelected(artwork)"/> </dd>
-        </td>
-        <td>
-          <h3><b>Año:</b> {{ artwork.name }}</h3>
-          <dd><b>Año:</b> {{ artwork.year }}</dd>
-          <dd><b>Tipo:</b> {{ artwork.type }}</dd>
-        </td>
-      </tr>
-    </table>
-  </div>
-</div>

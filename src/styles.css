@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+img {
+  height: 300px;
+  width: auto;
+  width: 1300px;
+ }
+
+ table {
+	width: 10%;
+	height: 200px;
+  width: 600px;
+}
