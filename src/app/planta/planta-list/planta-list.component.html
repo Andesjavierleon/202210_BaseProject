@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <tr *ngFor="let artwork of artworks">
+        <td>
+          <dd><img src="{{ artwork.images[0].source }}" alt="{{ artwork.name }}" (click)="onSelected(artwork)"/> </dd>
+        </td>
+        <td>
+          <h3><b>Año:</b> {{ artwork.name }}</h3>
+          <dd><b>Año:</b> {{ artwork.year }}</dd>
+          <dd><b>Tipo:</b> {{ artwork.type }}</dd>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
