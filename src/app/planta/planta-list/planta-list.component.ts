@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Planta } from './planta';
-import { PlantaService } from './planta.service';
+import { Planta } from '../planta';
+import { PlantaService } from '../planta.service';
 
 @Component({
-  selector: 'app-planta',
-  templateUrl: './planta.component.html',
-  styleUrls: ['./planta.component.css']
+  selector: 'app-planta-list',
+  templateUrl: './planta-list.component.html',
+  styleUrls: ['./planta-list.component.css']
 })
-export class PlantaComponent implements OnInit {
+export class PlantaListComponent implements OnInit {
 
   plantas: Array<Planta> = [];
 
@@ -22,5 +22,4 @@ export class PlantaComponent implements OnInit {
   ngOnInit(): void {
     this.getPlantas();
   }
-
 }
