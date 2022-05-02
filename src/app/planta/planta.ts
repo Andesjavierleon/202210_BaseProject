@@ -1,10 +1,8 @@
-import { PlantaTipo } from "./planta-tipo";
-
 export class Planta {
   id: number;
   nombre_comun: string;
   nombre_cientifico: string;
-  tipo: PlantaTipo;
+  tipo: String;
   altura_maxima: number;
   clima: string;
   sustrato_siembra: string;
@@ -13,7 +11,7 @@ export class Planta {
     id: number,
     nombre_comun: string,
     nombre_cientifico: string,
-    tipo: PlantaTipo,
+    tipo: String,
     altura_maxima: number,
     clima: string,
     sustrato_siembra: string,
